@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/stardewPanorama.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Цвет текста по умолчанию белый */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    vertical-align: middle;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header .nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Увеличение размера текста */
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 0 100px; /* Увеличение отступа сверху для размещения фиксированного заголовка */
+}
+
+.hero h1, .hero h2, .hero p {
+    margin: 0 0 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Увеличение размера текста */
+}
+
+.hero h2 {
+    font-size: 2em; /* Размер для названия игры */
+    margin-bottom: 10px; /* Уменьшение отступа снизу */
+}
+
+.hero .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 40px; /* Увеличение размера кнопки */
+    font-size: 1.5em; /* Увеличение текста */
+    font-weight: bold; /* Жирный текст */
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s, margin-top 0.3s; /* Добавлен переход для увеличения размера и отступа */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.hero .btn:hover {
+    transform: scale(1.1); /* Увеличение размера при наведении */
+}
+
+.about, .download, .contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgba(31, 25, 25, 0.5); /* Полупрозрачный фон для читаемости текста */
+    color: #ffffff; /* Цвет текста белый */
+    margin: 20px 5%; /* Отступы слева и справа */
+    border-radius: 15px; /* Скругленные углы */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Белая кайма */
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.about img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px; /* Скругленные углы для изображения */
+}
+
+.about .text {
+    max-width: 45%;
+}
+
+.download .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 20px 40px; /* Увеличение размера кнопки */
+    font-size: 1.5em; /* Увеличение текста */
+    font-weight: bold; /* Жирный текст */
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s; /* Добавлен переход для изменения цветов и размера */
+    border: 2px solid transparent; /* Прозрачная рамка */
+}
+
+.download .btn:hover {
+    background-color: #fff; /* Белый фон при наведении */
+    color: #28a745; /* Зеленый текст при наведении */
+    border: 2px solid #28a745; /* Зеленая кайма при наведении */
+    transform: scale(1.1); /* Увеличение размера при наведении */
+}
+
+.contact {
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Дополнительные стили для корректного отображения при прокрутке */
+body {
+    padding-top: 60px; /* Отступ сверху для корректного отображения контента под фиксированной навигацией */
+}
+
+.header .logo {
+    position: absolute;
+    left: 20px; /* Позиционирование логотипа слева */
+}
+
+.header .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header .nav ul li {
+    display: inline;
+    margin: 0 20px;
+    border-radius: 20px; /* Added border radius */
+    padding: 20px 0px; /* Added padding for better spacing */
+}
+.contact ul a[href="https://t.me/AbodedFarm"] {
+    color: #0cf3f3; /* Set the color to yellow */
+    text-decoration: none; /* Remove underline */
+}

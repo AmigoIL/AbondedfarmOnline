@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abonded Farm Part II</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo" width="58" height="58">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#about">О игре</a></li>
+                    <li><a href="#download">Скачать</а></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Abonded Farm Part II</h2>
+            <h1>Добро пожаловать в нашу игру!</h1>
+            <p>Окунитесь в мир увлекательных приключений</p>
+            <a href="#download" class="btn">Скачать игру</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="text">
+                <h2>О чём наша игра?</h2>
+                <p>В наследство вам достаётся старенький дом бабуши. Вы решаете попробовать что то новое и передаете в новый дом, где вас ждут новые сложности и трудности, а также новые друзья и знакомые. Разгадайте тайну этого места и продолжите бабушкино дело</p>
+                <p></p>
+                <p>Всё зависит только от вас. Я могу лишь пожелать удачи вам!</p>
+            </div>
+            <img src="images/abonded farm1.png" alt="About the game">
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Скачать игру</h2>
+            <p>Нажмите на кнопку ниже, чтобы скачать игру и начать свое приключение.</p>
+            <p>Внимание! Игра находится в Bete.</p>
+            <a href="https://drive.google.com/uc?export=download&id=1KOLbdJxMBYjazCD7X5nFHa2J_gIQXC81" class="btn">Скачать игру</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы или предложения, свяжитесь с нами:</p>
+            <ul>
+                <li>Email: ilyazubkow130808@gmail.com</li>
+                <li>
+                    <a href="https://t.me/AbodedFarm" target="_blank">
+                        <i class="fab fa-telegram"></i> Телеграм канал
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Игра находится в Bete! Если найдёте баги или хотите предложить улучшения пишите нам!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Скрипт для прокрутки вверх при нажатии на логотип
+        document.querySelector('.logo').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Скрипт для прокрутки вверх при нажатии на "Главная"
+        document.querySelector('.nav ul li a[href="#"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
