@@ -189,3 +189,11 @@ body {
 .header .nav ul li a.telegram-icon i {
     vertical-align: middle; /* Выравнивание иконки по середине */
 }
+.custom-icon {
+    width: 26px; /* Установите желаемую ширину */
+    height: 26px; /* Установите желаемую высоту */
+}
+.contact a {
+    color: orange; /* Установите желаемый цвет */
+    text-decoration: none; /* Убираем подчеркивание */
+}
