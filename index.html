@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
     <header class="header">
@@ -19,8 +18,13 @@
                 <ul>
                     <li><a href="#">Главная</a></li>
                     <li><a href="#about">О игре</a></li>
-                    <li><a href="#download">Скачать</а></li>
+                    <li><a href="#download">Скачать</a></li>
                     <li><a href="#contact">Контакты</a></li>
+                    <li>
+                        <a href="https://t.me/AbodedFarm" target="_blank" class="telegram-icon">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -39,8 +43,7 @@
         <div class="container">
             <div class="text">
                 <h2>О чём наша игра?</h2>
-                <p>В наследство вам достаётся старенький дом бабуши. Вы решаете попробовать что то новое и передаете в новый дом, где вас ждут новые сложности и трудности, а также новые друзья и знакомые. Разгадайте тайну этого места и продолжите бабушкино дело</p>
-                <p></p>
+                <p>В наследство вам достаётся старенький дом бабушки. Вы решаете попробовать что-то новое и переезжаете в новый дом, где вас ждут новые сложности и трудности, а также новые друзья и знакомые. Разгадайте тайну этого места и продолжите бабушкино дело</p>
                 <p>Всё зависит только от вас. Я могу лишь пожелать удачи вам!</p>
             </div>
             <img src="images/abonded farm1.png" alt="About the game">
@@ -52,7 +55,7 @@
             <h2>Скачать игру</h2>
             <p>Нажмите на кнопку ниже, чтобы скачать игру и начать свое приключение.</p>
             <p>Внимание! Игра находится в Bete.</p>
-            <a href="files/beta_Abonded farm2.zip" class="btn">Скачать игру</a>
+            <a href="files/beta_Abonded_farm2.zip" class="btn">Скачать игру</a>
         </div>
     </section>
 
@@ -68,17 +71,21 @@
                     </a>
                 </li>
             </ul>
-            
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; Игра находится в Bete! Если найдёте баги или хотите предложить улучшения пишите нам!</p>
+            <p>&copy; Игра находится в Bete! Если найдёте баги или хотите предложить улучшения, пишите нам!</p>
         </div>
     </footer>
 
     <script>
+        // Прокрутка к началу страницы при загрузке
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+        });
+
         // Скрипт для прокрутки вверх при нажатии на логотип
         document.querySelector('.logo').addEventListener('click', function(event) {
             event.preventDefault();

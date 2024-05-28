@@ -175,3 +175,17 @@ body {
     color: #0cf3f3; /* Set the color to yellow */
     text-decoration: none; /* Remove underline */
 }
+/* Стили для меню и иконки Telegram */
+.header .nav ul li a.telegram-icon {
+    color: #0cf3f3; /* Цвет иконки Telegram */
+    font-size: 1.5em; /* Размер иконки */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.header .nav ul li a.telegram-icon:hover {
+    color: #1da1f2; /* Цвет при наведении */
+}
+
+.header .nav ul li a.telegram-icon i {
+    vertical-align: middle; /* Выравнивание иконки по середине */
+}
